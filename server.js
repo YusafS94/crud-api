@@ -6,7 +6,10 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // Simulated database
-let items = [];
+let items = [
+    { id: 1, name: "Yusaf Saddiq" },
+    { id: 2, name: "Abbie Saddiq" }
+];
 
 // Create
 app.post('/items', (req, res) => {
